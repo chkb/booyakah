@@ -1,5 +1,17 @@
 .card {
-    height: 200px;
+    height: 175px;
+    width: 300px;
+
+    .header {
+        background: #029687;
+        margin: -16px -16px;
+        padding: 24px 16px 32px 16px;
+        color: white;
+    }
+
+    .action {
+        margin-top: 16px;
+    }
 }
 
 .header-image {
