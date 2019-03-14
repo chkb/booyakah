@@ -9,20 +9,12 @@ import { WorkspaceDashboardComponent } from './workspace/workspace-dashboard/wor
 const routes: Route[] = [
   {
     path: '',
-    redirectTo: '/workspace',
+    redirectTo: '/legegruppe',
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    component: LoginComponent,
-    data: {
-      breadcrumb: 'login'
-    },
-  },
-  {
-    path: 'workspace',
+    path: 'legegruppe',
     component: WorkspaceDashboardComponent,
-    canActivate: [AuthGuard],
   }
 ];
 

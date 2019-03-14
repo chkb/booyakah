@@ -5,6 +5,7 @@ import { MaterialModule } from '../shared/material.module';
 import { WorkspaceCreateComponent } from './workspace-create/workspace-create.component';
 import { WorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { WorkspaceViewComponent } from './workspace-view/workspace-view.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { WorkspaceViewComponent } from './workspace-view/workspace-view.componen
     WorkspaceDashboardComponent
   ],
   imports: [
+    CommonModule,
     MaterialModule,
     FlexLayoutModule
   ]

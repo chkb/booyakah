@@ -1,20 +1,7 @@
-.card {
-    height: 175px;
-    width: 300px;
-
-    .header {
-        background: #029687;
-        margin: -16px -16px;
-        padding: 24px 16px 32px 16px;
-        color: white;
-    }
-
-    .action {
-        margin-top: 16px;
-    }
+.table {
+    width: 100%;
 }
 
-.header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+tr.mat-row:hover {
+    background: #bbdefb;
 }

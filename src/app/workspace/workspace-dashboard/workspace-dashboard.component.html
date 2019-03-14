@@ -1,19 +1,68 @@
-<h2>
-  Workspaces
-</h2>
+<h1>Enghavegård skole 1.a</h1>
 
-<div fxLayout="row"
-     fxLayoutAlign="space-around center">
-  <div fxFlex>
-    <mat-card class="card">
-      <mat-card-header class="header">
-        <mat-card-title>Workspace</mat-card-title>
-        <mat-card-subtitle>Description here</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-actions class="action">
-        <button mat-button>OPEN</button>
-        <button mat-button>EDIT</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-</div>
+<table mat-table
+       [dataSource]="dataSource"
+       class="mat-elevation-z8 table">
+
+  <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="group1">
+    <th mat-header-cell
+        *matHeaderCellDef> Gruppe 1 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.group1}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="group2">
+    <th mat-header-cell
+        *matHeaderCellDef> Gruppe 2 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.group2}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="group3">
+    <th mat-header-cell
+        *matHeaderCellDef> Gruppe 3 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.group3}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="group4">
+    <th mat-header-cell
+        *matHeaderCellDef> Gruppe 4 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.group4}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="yearWeek1">
+    <th mat-header-cell
+        *matHeaderCellDef> Ratation 1 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.yearWeek1}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="yearWeek2">
+    <th mat-header-cell
+        *matHeaderCellDef> Rotation 2 </th>
+    <td mat-cell
+        *matCellDef="let element"> {{element.yearWeek2}} </td>
+  </ng-container>
+
+  <tr mat-header-row
+      *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row
+      *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<br>
+<br>
+<br>
+<a href="https://calendar.google.com/calendar?cid=cjljNTlmZW8zY2cxMDI1OW9xcjY2M2JkamtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+   mat-raised-button>Kalender Link</a>
